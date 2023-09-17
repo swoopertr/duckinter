@@ -5,18 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>duckinder</title>
     <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
     <h1>Duckinder</h1>
-    <div>
+    <div class="contents">
         <div class="img-container">
             <img id="img_duck" src="https://random-d.uk/api/randomimg" />
         </div>
         <div class="text-container">
             <h2>My Choices</h2>
             <div class="content">
-                <p id="unfollow">Begenmediklerim</p>
-                <p id="follow">Begendiklerim</p>
+                <p id="unfollow">
+                    <i class="material-icons" style="color: red ; font-size: 36px;">close</i></p>
+                    <span id="numberUnfollowEffect" class="hidden"></span>
+        
+                    <p id="follow">
+                    <i class="material-icons" style="color: green ; font-size: 36px;">favorite</i></p>
+                    <span id="numberFollowEffect" class="hidden"></span>
+        
             </div>
         </div>
     </div>
