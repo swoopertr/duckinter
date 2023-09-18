@@ -1,5 +1,26 @@
-.img-container{
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap');
+
+html, body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Nunito', sans-serif;
+    background-color: #edeef3;
+  }
+  /* CSS Developed End*/
+
+.contents {
+    display: contents;
+    font-size: xx-large;
+    color: gray;
+}
+
+.img-container{
+    width: 60%;
     overflow: hidden;
 }
 
@@ -29,5 +50,61 @@
 }
 
 .content {
-    
+    max-width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap
 }
+/* Counter Effect Start*/
+.plus-one {
+    color: green;
+    font-weight: bold;
+    position: relative;
+  
+    -webkit-animation-name: translation; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+  
+    animation-name: translation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  .minus-one {
+    color: red;
+    font-weight: bold;
+    position: relative;
+  
+    -webkit-animation-name: translation; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+  
+    animation-name: translation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes translation {
+    from {
+      top: 0;
+      opacity: 100%;
+    }
+    to {
+      opacity: 0%;
+      top: -10em;
+      }
+  }
+    
+  .hidden {
+    display: none;
+  }
+
+  /* Counter Effect End*/
